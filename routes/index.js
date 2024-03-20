@@ -5,6 +5,7 @@ const postController = require('../controllers/postController');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
+  console.log('get')
   postController.getPostTodolistData(req,res,next)
 });
 router.post('/', (req, res, next) => {

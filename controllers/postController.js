@@ -7,6 +7,7 @@ const postControllers = {
     // const searchContent = req.query.search !== undefined && req.query.search !== null ? {'content':new RegExp(req.query.search)} :{};
     // const timeStamp = req.query.timeStamp === 'asc' ? 'createAt' : '-createAt';
     const data = Post.find();
+    console.log(data, 'data')
     handleSuccess(res, data);
   },
   addPostTodolistData:  handleError(async(req, res, next)=>{

@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/posts', indexRouter);
+app.use('/todos', indexRouter);
 // app.use('/users', usersRouter);
 app.use((req,res)=>{
   res.status(404).json({

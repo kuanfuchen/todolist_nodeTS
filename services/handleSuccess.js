@@ -3,6 +3,5 @@ const handleSuccess = (res, data)=>{
     status:'Success',
     data
   })
-  res.end();
 };
 module.exports = handleSuccess;

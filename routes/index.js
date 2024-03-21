@@ -11,10 +11,10 @@ router.get('/', function(req, res, next) {
 router.post('/', (req, res, next) => {
   postController.addPostTodolistData(req,res, next)
 });
-router.delete(':id',(req, res, next) => {
+router.delete('/:id',(req, res, next) => {
   postController.deleteTodolistData(req,res)
 });
-router.patch(':id', (req, res, next)=>{
+router.patch('/:id', (req, res, next)=>{
   postController.updatePosts(req,res,next)
 })
 module.exports = router;

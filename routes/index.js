@@ -16,5 +16,5 @@ router.delete('/:id',(req, res, next) => {
 });
 router.patch('/:id', (req, res, next)=>{
   postController.updatePosts(req,res,next)
-})
+});
 module.exports = router;
